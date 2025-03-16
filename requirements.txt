@@ -1,6 +1,5 @@
 pandas
 streamlit
 folium
-math
 streamlit_folium
 requests
