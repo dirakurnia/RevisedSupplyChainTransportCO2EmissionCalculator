@@ -31,12 +31,12 @@ def search_address(query):
 #-------------For Unpack Latitude and Longitude------------------------------------
 def unpack_lat_lon(data, transport_type, port_or_airport_or_address_name):
     if transport_type == "Water Freight" :
-        lat = float(data.loc[data["Port Name"] == port_or_airport_or_address_name, "Latitude"])
-        lon = float(data.loc[data["Port Name"] == port_or_airport_or_address_name, "Longitude"])
+        lat = float(data.loc[data["Port Name"] == port_or_airport_or_address_name, "Latitude"].values[-1])
+        lon = float(data.loc[data["Port Name"] == port_or_airport_or_address_name, "Longitude"].values[-1])
         return [lat,lon]
     elif transport_type == "Air Freight":
-        lat = float(data.loc[data["Airport Name"] == port_or_airport_or_address_name, "Latitude"])
-        lon = float(data.loc[data["Airport Name"] == port_or_airport_or_address_name, "Longitude"])
+        lat = float(data.loc[data["Airport Name"] == port_or_airport_or_address_name, "Latitude"].values[-1])
+        lon = float(data.loc[data["Airport Name"] == port_or_airport_or_address_name, "Longitude"].values[-1])
         return [lat,lon]
     else : # Land Freight
         lat = float(search_address(port_or_airport_or_address_name)[0]["lat"])
