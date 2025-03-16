@@ -3,5 +3,4 @@ streamlit
 folium
 math
 streamlit_folium
-streamlit_folium.st_folium
 requests
