@@ -9,8 +9,8 @@ This repository contains a CO₂ emission calculation app that estimates carbon 
   
 ## Distance Calculation & Future Enhancements
 - The current approach calculates the straight-line (Haversine) distance between two latitude-longitude points.
-- Local best route/direction calculation was not taken to account due to performance limitations.
-- For trips >5km, the route optimization process may take over an hour. Hence, enhancing this distance calculation approach is a future enhancement opportunity to make the app more efficient.
+- Best route/direction calculation was not taken to account due to running-time limitations (need distributed computing).
+
 
 ## Next Steps
 - Implement faster route optimization for long-distance trips.
