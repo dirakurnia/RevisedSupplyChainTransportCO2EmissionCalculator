@@ -1,5 +1,5 @@
 ## Overview
-This repository contains a CO₂ emission calculation app that estimates carbon emissions for different transportation types. The app leverages OpenStreetMap's API to obtain transportation data and compute distances. It aims to provide an open-access tool for estimating emissions from freight transport, whether by road, air, or water.
+This repository contains a CO₂ emission calculation app that estimates carbon emissions for different transportation types. The app leverages OpenStreetMap's API to obtain transportation data and compute distances. It aims to provide an open-access tool for estimating emissions from freight transport, whether by road, air, or water. The app concept can be accessed through here: https://supplychaintransport-co2emissioncalculator-2.streamlit.app/
 
 ## Data Sources & Limitations
 - The app relies on OpenStreetMap (OSM), an open-source mapping service. While extensive, it may not cover all addresses, ports, or airports globally.
